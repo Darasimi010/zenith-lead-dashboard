@@ -380,4 +380,4 @@ Configured in `vite.config.ts`:
 
 ## License
 
-This project is an internal tool built for Zenith Realty Partners. All rights reserved.
+This project is built with love.
