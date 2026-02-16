@@ -6,6 +6,7 @@ import DashboardHeader from "./components/DashboardHeader";
 import FilterBar from "./components/FilterBar";
 import BulkActionBar from "./components/BulkActionBar";
 import LeadTable from "./components/LeadTable";
+import DashboardMetrics from "./components/Dashboard/DashboardMetrics";
 import { useLeads } from "./hooks/useLeads";
 import { exportToCsv } from "./utils/exportCsv";
 
@@ -91,6 +92,8 @@ const App: React.FC = () => {
             style={{ marginBottom: 16, borderRadius: 10 }}
           />
         )}
+
+        <DashboardMetrics leads={filteredLeads} loading={loading} />
 
         <FilterBar
           searchText={searchText}

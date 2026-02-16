@@ -289,3 +289,44 @@ body {
     transform: scale(1);
   }
 }
+
+/* --- Dashboard Metrics (Charts) --- */
+.dashboard-metrics {
+  margin-bottom: 20px;
+}
+
+.dashboard-chart-card {
+  border: none;
+  border-radius: 12px;
+  box-shadow:
+    0 1px 3px rgba(0, 0, 0, 0.06),
+    0 1px 2px rgba(0, 0, 0, 0.04);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+  height: 100%;
+}
+
+.dashboard-chart-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(27, 58, 92, 0.12);
+}
+
+.dashboard-chart-card__title {
+  font-size: 14px;
+  font-weight: 600;
+  color: #1b3a5c;
+}
+
+.dashboard-chart-card .recharts-default-tooltip {
+  font-family:
+    "Inter",
+    -apple-system,
+    BlinkMacSystemFont,
+    sans-serif !important;
+}
+
+/* skeleton inside chart cards */
+.dashboard-chart-card .ant-skeleton-element {
+  width: 100% !important;
+}
